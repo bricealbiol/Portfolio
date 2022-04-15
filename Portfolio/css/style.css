@@ -397,6 +397,13 @@ body {
 
 /* Contact */
 
+  .titre-contact{
+    font-size: 40px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+
+  }
+
 form{
   background: rgba(27,31,34,0.80);
   width: 640px;
@@ -406,7 +413,38 @@ form{
   padding: 55px 30px;
   color :white;
 }
-
+/*
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .div2 {
+     grid-area: 1 / 2 / 2 / 3; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  */
+/*
+  .v-line{
+    top: 35%;
+    border-left: thick solid #fff;
+    height: 85%;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+   }
+*/
 form input{
   color:white
 }
@@ -536,7 +574,58 @@ form .action input[type="reset"]:hover{
   .blog-articles .post-article {
     width: 100%;
   }
+  .div2:disabled{
+    visibility: hidden;
+    }
+  button{
+    visibility: hidden;
+  }
+  .texte-presentation p{
+    font-size: 100%;
+  }
+
+}
+
+@media(max-height:600px) {
+
+  h6{
+    visibility: hidden;
+  }
   .presentation{
-    
+    min-width: 20%;
+  }
+  button{
+    visibility: hidden;
+  }
+}
+
+@media(max-height:700px) {
+
+  .links{
+    flex-direction: column;
+    right: 10%;
+    top: 75%;
+  } 
+  button{
+    visibility: hidden;
+  }
+  h6{
+    visibility: hidden;
+    font-size: 80%;
+  }
+}
+
+@media(max-height:500px){
+  .presentation h1{
+    font-size: 60%;
+  }
+  .presentation p {
+    font-size: 80%;
+  }
+}
+
+@media(max-height:370px){
+  .presentation p {
+    font-size: 60%;
   }
 }
